@@ -11,7 +11,7 @@ end
 
 def get_japanese_emoticon(path, emoji)
   library = load_library(path)
-  
+  response = nil
   library.each do |name , emojis|
       english = emojis[:english]
       japanese = emojis[:japanese]
